@@ -1,8 +1,9 @@
+puts "Hi"
 require 'pry' # in case you want to use binding.pry
 require 'active_record'
 require_relative 'lib/store'
 require_relative 'lib/employee'
-
+puts "Hello"
 # Output messages from Active Record to standard out
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
@@ -42,3 +43,4 @@ ActiveRecord::Schema.define do
 end
 
 puts 'Setup DONE'
+
